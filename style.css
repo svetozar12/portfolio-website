@@ -1,0 +1,180 @@
+/*remove padding from borders of default html site*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, caption {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+
+}
+/*parallax effect*/
+.parallax {
+
+   background-image: url("pics/1.jpg");
+   background-attachment: fixed;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   min-height: 800px;
+
+}
+/*there are element from the container which is used only for organize*/
+.container {
+	
+}
+/*that is the first text that is shown when u enter the site (hey im svetozar gospodinov)*/
+.white-text  {
+	position: relative; 
+	color: white;
+	text-align: center;
+	font-size: 36px;
+	top: 350px;
+/*that is the lines before my name*/
+}
+
+/*its used for the text in the second white blank space*/
+.black-text {
+	position: relative; ;
+	color: black;
+	text-align: center;
+	font-size: 36px;
+
+	
+}
+.line::before {
+	position: relative;
+	content: "____ ";
+	top: -18px;
+/*these are the lines after my name*/
+}
+.line::after {
+	position: relative;
+	content: " ____";
+	top: -18px;
+
+}
+/*container1 is used to organize second block of text(there i will let you...)*/
+.container1{
+
+}
+
+/*style the second h3 element(at the moment)*/
+.line1 {
+	font-size: 32px;
+	padding:10px;
+	font-family:'Lato'; 
+
+}
+/*its the second parallax effect*/
+.parallax2 {
+	background-image: url("pics/2.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 800px;
+
+}
+/*grid 3x3 its a grid 3x3*/
+
+/*img-background is used to style grid images so they dont go vertical they should go horizontal*/
+.img-bacground{
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 350px;
+  width: 100%;
+
+}
+/*items-wrapper is used over all images*/
+
+
+
+
+.items-wrapper {
+	position: relative;
+  /*
+	display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+*/
+}
+
+/*grid-item style every img individually*/
+.grid-item {
+	  background-size: cover;
+	  background-position: center;
+	  background-repeat: no-repeat;
+	  max-height: 350px;
+	  height: 350px;
+	  width: 100%;
+	  display: block;
+
+}
+
+.item-wrapper {
+	position: relative;
+  margin-top: -50px;
+
+/*grid images class*/
+}
+
+.darken{
+	transition: 1s;
+}
+.item-wrapper:hover > .darken  {
+
+   filter: brightness(10%);
+   transition: 1s;
+}
+
+
+#subtitle {
+  top: 190px;
+  justify-content: center;
+  position: relative;
+  color: transparent;
+  z-index: 1;
+  transition: 1s;
+}
+
+.item-wrapper:hover  > #subtitle{
+
+  color: white !important;
+}
+
+
+
+
+/*testings*/
+.div1 {
+  position: absolute;
+  width: 30%;
+}
+.div1_1{
+  display: inline;
+  left: 1000px;
+}
+
+
+
+.div2 {
+  width: 30%;
+  position: absolute;
+}
+.div2_1{
+  display: inline;
+
+}
+
+
+
+.div3 {
+  position: absolute;
+  width: 30%;
+}
+.div3_1{
+  display: inline;
+}
