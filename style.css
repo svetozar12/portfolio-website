@@ -95,11 +95,11 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 
 .items-wrapper {
 	position: relative;
-  /*
+  
 	display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
-*/
+
 }
 
 /*grid-item style every img individually*/
@@ -116,7 +116,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 
 .item-wrapper {
 	position: relative;
-  margin-top: -50px;
+  
 
 /*grid images class*/
 }
@@ -132,9 +132,10 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 
 
 #subtitle {
-  top: 190px;
+  top: 150px;
+  left: 260px;
   justify-content: center;
-  position: relative;
+  position: absolute;
   color: transparent;
   z-index: 1;
   transition: 1s;
@@ -148,14 +149,17 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 
 
 
-/*testings*/
+/*testings
+.div-god {
+position: relative;
+}
+
 .div1 {
   position: absolute;
   width: 30%;
 }
 .div1_1{
   display: inline;
-  left: 1000px;
 }
 
 
@@ -163,9 +167,11 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 .div2 {
   width: 30%;
   position: absolute;
+  float: left;
 }
 .div2_1{
   display: inline;
+  
 
 }
 
@@ -177,4 +183,6 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 }
 .div3_1{
   display: inline;
+  float: left;
 }
+*/
