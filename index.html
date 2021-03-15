@@ -2,8 +2,21 @@
 <html>
 <head>
 	
-<title>Portfolio about me</title>
+	<title>Portfolio about me</title>
 <script src="script.js"></script>
+<script type="text/javascript">
+	function openNav()
+{
+  document.getElementById("myNav").style.width="150px"; 
+}
+
+function closeNav()
+{
+  document.getElementById("myNav").style.width="0px"; 
+}
+
+	
+</script>
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="stylesheet" type="text/css" href="style1(keyframes).css">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
@@ -12,7 +25,15 @@
 	<link href="https://fonts.googleapis.com/css2?family=Londrina+Solid&display=swap" rel="stylesheet">
 </head>
 <body>
-					        			
+		<div class="nav" id="myNav">
+  <a class="closeButton" href="#" onclick="closeNav()">&times;</a>
+  <a href="#">About</a>
+  <a href="#">Service</a>
+  <a href="#">Clients</a>
+  <a href="#">Contact</a>
+</div>
+<a class="openButton" href="#" onclick="openNav()">&#9776;</a>
+			        			
 <div  class="container">
 			<div class="parallax ">
 				<div class="animation_falling_text">

@@ -147,42 +147,39 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 }
 
 
-
-
-/*testings
-.div-god {
-position: relative;
-}
-
-.div1 {
-  position: absolute;
-  width: 30%;
-}
-.div1_1{
-  display: inline;
-}
-
-
-
-.div2 {
-  width: 30%;
-  position: absolute;
+/*navbar*/
+nav {
+  background-color: gray;
   float: left;
+  z-index:1;
+  overflow-x: hidden;
+  position: fixed;
+  height: 100%;
+  transition: 0.5s;
+ 
 }
-.div2_1{
-  display: inline;
+
+.nav a {
+   padding: 8px 80px 8px 8px;/*.top .right .botom .left*/
+   text-decoration:none;
+   color:white ;
+   transition: 0.5s;
+   display: block;
+   font-size:25px;
+}
+.nav a:hover {
+    color: black;
+    transition: 0.3s;
   
-
 }
 
-
-
-.div3 {
+.closeButton {
   position: absolute;
-  width: 30%;
+  left: 120px;
 }
-.div3_1{
-  display: inline;
-  float: left;
+
+.openButton {
+  text-decoration: none;
+  font-size: 60px;
+  position: fixed;
 }
-*/
