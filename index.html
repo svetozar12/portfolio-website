@@ -5,17 +5,13 @@
 	<title>Portfolio about me</title>
 <script src="script.js"></script>
 <script type="text/javascript">
-	function openNav()
-{
-  document.getElementById("myNav").style.width="150px"; 
+function openNav() {
+  document.getElementById("mySidenav").style.width = "25%";
 }
 
-function closeNav()
-{
-  document.getElementById("myNav").style.width="0px"; 
-}
-
-	
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}	
 </script>
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="stylesheet" type="text/css" href="style1(keyframes).css">
@@ -25,14 +21,16 @@ function closeNav()
 	<link href="https://fonts.googleapis.com/css2?family=Londrina+Solid&display=swap" rel="stylesheet">
 </head>
 <body>
-		<div class="nav" id="myNav">
-  <a class="closeButton" href="#" onclick="closeNav()">&times;</a>
-  <a href="#">About</a>
-  <a href="#">Service</a>
-  <a href="#">Clients</a>
-  <a href="#">Contact</a>
-</div>
-<a class="openButton" href="#" onclick="openNav()">&#9776;</a>
+	<div id="mySidenav" class="sidenav">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		<a href="#">About</a>
+		<a href="#">Services</a>
+		<a href="#">Clients</a>
+		<a href="#">Contact</a>
+	</div>
+
+	  <span style="font-size:50px;cursor:pointer; position:fixed;z-index: 1;padding: 20px;color: gray;" onclick="openNav()">&#9776; </span>
+	  
 			        			
 <div  class="container">
 			<div class="parallax ">
