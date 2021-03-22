@@ -9,6 +9,9 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     background: transparent;
 
 }
+.container {
+  z-index: 0;
+}
 /*parallax effect*/
 .parallax {
    background-image: url("pics/1.jpg");
@@ -148,7 +151,7 @@ body {
   height: 100%;
   width: 0;
   position: fixed;
-  z-index: 1;
+  z-index: -1;
   top: 0;
   left: 0;
   background-color: #111;
@@ -185,8 +188,51 @@ body {
   .sidenav a {font-size: 18px;}
 }
 
-.nav-logo:hover {
-  color: white;
+
+.burger-menu-btn {
   
+  cursor: pointer;
+  display: inline-block;
+  z-index: 1;
+  padding: 10px;
+
 }
+
+
+
+
+.burger-menu-1,
+.burger-menu-2,
+.burger-menu-3 {
+  
+  width:35px;
+  height: 5px;
+  margin: 6px 0;
+  transition: 0.4s;
+  background-color: gray; 
+}
+
+.change .burger-menu-1 {
+    transform: rotate(45deg) translate(9px, 6px);
+}
+
+.change .burger-menu-2 {
+    opacity: 0;
+}
+
+.change .burger-menu-3{
+    transform: rotate(-45deg) translate(9px, -6px);
+} 
+
+#burger-menu.open {
+     width:25%;
+}
+
+#burger-menu {
+     width:0%;
+}
+
+
+
+
 
