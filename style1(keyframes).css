@@ -20,6 +20,7 @@
 position:  relative;
 animation: animate 2s;
 animation-fill-mode: forwards; 
+z-index: 0;
 }
 
 @keyframes animate {
@@ -47,3 +48,6 @@ animation-fill-mode: forwards;
   from {right: -2000px;}
   to {right: 0px;}
 }
+
+
+

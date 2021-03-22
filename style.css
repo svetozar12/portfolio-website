@@ -10,7 +10,8 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 
 }
 .container {
-  z-index: 0;
+  position: relative;
+  z-index: -2;
 }
 /*parallax effect*/
 .parallax {
@@ -75,7 +76,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 /*grid 3x3 its a grid 3x3*/
 
 /*img-background is used to style grid images so they dont go vertical they should go horizontal*/
-.img-bacground{
+.img-background{
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -193,8 +194,8 @@ body {
   
   cursor: pointer;
   display: inline-block;
-  z-index: 1;
-  padding: 10px;
+  z-index: 999;
+  padding: 30px;
 
 }
 
@@ -205,15 +206,15 @@ body {
 .burger-menu-2,
 .burger-menu-3 {
   
-  width:35px;
-  height: 5px;
-  margin: 6px 0;
-  transition: 0.4s;
+  width:52px;
+  height: 8px;
+  margin: 12px 0;
+  transition: 0.3s;
   background-color: gray; 
 }
 
 .change .burger-menu-1 {
-    transform: rotate(45deg) translate(9px, 6px);
+    transform: rotate(45deg) translate( 4px, 17px);
 }
 
 .change .burger-menu-2 {
@@ -221,7 +222,7 @@ body {
 }
 
 .change .burger-menu-3{
-    transform: rotate(-45deg) translate(9px, -6px);
+    transform: rotate(-45deg) translate(9px, -27px);
 } 
 
 #burger-menu.open {
