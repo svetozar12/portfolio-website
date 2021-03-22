@@ -4,15 +4,19 @@
 	
 	<title>Portfolio about me</title>
 <script src="script.js"></script>
-<script type="text/javascript">
-function openNav() {
-  document.getElementById("mySidenav").style.width = "25%";
-}
-
-function closeNav() {
-  document.getElementById("mySidenav").style.width = "0";
-}	
-</script>
+<script>
+	function myFunction(x) {
+	  x.classList.toggle("change");
+	}
+		
+		function openNav() {
+			document.getElementById("burger-menu").classList.toggle("open");
+	}    
+	  function closeNav() {
+		document.getElementById("burger-menu").style.widht="0px";
+	  }  
+	
+	</script>
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="stylesheet" type="text/css" href="style1(keyframes).css">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
@@ -21,16 +25,19 @@ function closeNav() {
 	<link href="https://fonts.googleapis.com/css2?family=Londrina+Solid&display=swap" rel="stylesheet">
 </head>
 <body>
-	<div id="mySidenav" class="sidenav">
-		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-		<a href="index.html">About</a>
-		<a href="#">Services</a>
-		<a href="#">Clients</a>
-		<a href="#">Contact</a>
+	  <div style="position: fixed;">
+		<div id="burger-menu" class="sidenav">
+			<a href="#">About</a>
+			<a href="#">Services</a>
+			<a href="#">Clients</a>
+			<a href="#">Contact</a>
 	</div>
-
-	  <span class="nav-logo" style="font-size:50px;cursor:pointer; position:fixed;z-index: 1;padding: 20px;color: #818181;" onclick="openNav()">&#9776; </span>
-	  
+		<div id="burger" class="burger-menu-btn" onclick="openNav();myFunction(this)">
+	<div class="burger-menu-1"></div>
+	<div class="burger-menu-2"></div>
+	<div class="burger-menu-3"></div>
+		</div>
+	  </div>
 			        			
 <div  class="container">
 			<div class="parallax ">
