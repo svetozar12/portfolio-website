@@ -1,14 +1,12 @@
 <html>
     <head>
         <title>Contact</title>
-            <link rel="stylesheet" href="style.css">
             <link rel="stylesheet" href="form.css">
         <style>
               html {
                   background-image: url('pics/contact.jpg');
                   background-repeat: no-repeat;
                   background-size: cover;
-                  object-fit: cover;
                 
               }
               .links {
@@ -16,7 +14,7 @@
                    position: absolute;
                    display: block;
                    top: 727px;
-                   width: 1600px;
+                   width: 1591px;
                    height: 100px;
 
                     }  
@@ -49,12 +47,16 @@
               </div>
             
                     <div class="container2">
+                        <div class="box-background">
 
-                        <form class="box" action="">
-                            <h1>Contact me</h1>
-                            <input id="name" name="name" type="text">
-                            <input id="name" name="name" type="text">
-                        </form>
+                        </div>
+                            <form class="box" action="">
+                                <h1 style="color: white; padding-bottom:10px ;">Contact me</h1>
+                                <input style="margin-bottom: 10px;"  name="fname" type="text" placeholder="Fist Name" onfocus="this.placeholder = ''" onblur="this.placeholder='Fist Name' "> <br>
+                                <input style="margin-bottom: 10px;" name="lname" type="text" placeholder="Last Name" onfocus="this.placeholder = ''" onblur="this.placeholder='Last Name' "> <br> 
+                                <input style="margin-bottom: 10px;" name="email" type="email" placeholder="What is your email?" onfocus="this.placeholder = ''" onblur="this.placeholder='What is your email?' " > <br>
+                                    <textarea style="resize: none; right: 740px;" name="Message" id="Message" cols="30" rows="2" placeholder="Your Message" onfocus="this.placeholder = '' " onblur= "this.placeholder='Your Message'" ></textarea>  <br>
+                            </form>
 
                     </div>
                         <div class="links">
