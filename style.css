@@ -9,10 +9,48 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     background: transparent;
 
 }
+::-webkit-scrollbar {
+  width: 9px;
+}
+
+
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgb(119, 119, 118);
+}
+
+
+
 .container {
   position: relative;
   z-index: -2;
 }
+
+
+/*services html styles*/
+.container1 {
+  position: relative;
+  z-index: -2;
+}
+
+/**/
+
+/*contact html styles*/
+.container2 {
+  position: relative;
+  z-index: -2;
+            }
+
+          
+/**/
+
+
+
 /*parallax effect*/
 .parallax {
    background-image: url("pics/1.jpg");
@@ -20,7 +58,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
    background-position: center;
    background-repeat: no-repeat;
    background-size: cover;
-   min-height: 800px;
+   min-height: 850px;
 
 }
 /*that is the first text that is shown when u enter the site (hey im svetozar gospodinov)*/
@@ -155,7 +193,7 @@ body {
   z-index: -1;
   top: 0;
   left: 0;
-  background-color: #111;
+  background-color: rgb(43, 43, 43);
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
@@ -194,12 +232,10 @@ body {
   
   cursor: pointer;
   display: inline-block;
-  z-index: 999;
+  z-index: 10;
   padding: 30px;
 
 }
-
-
 
 
 .burger-menu-1,
@@ -210,7 +246,7 @@ body {
   height: 8px;
   margin: 12px 0;
   transition: 0.3s;
-  background-color: gray; 
+  background-color: rgb(71, 71, 71); 
 }
 
 .change .burger-menu-1 {
@@ -222,8 +258,17 @@ body {
 }
 
 .change .burger-menu-3{
-    transform: rotate(-45deg) translate(9px, -27px);
+    transform: rotate(-45deg) translate(10px, -25px);
+    
 } 
+/*
+.burger-menu-circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: red;
+    z-index: 999 !important;
+}*/
 
 #burger-menu.open {
      width:25%;
