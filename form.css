@@ -193,9 +193,37 @@ body {
   }
   /*_____________________________________________*/
 
-  .flex-container {
-    display: flex;
-    flex-direction: row-reverse;
+  .logos {
+    position: absolute;
+    top:  10px;
+    left: 1600px;
+   
     
   }
   
+  .darken-logos {
+    transition: 1s;
+  }
+
+  .logo-wrapper {
+    display: inline;
+  }
+
+  .logo-wrapper:hover > .darken-logos {
+    filter: brightness(30%);
+    transition: 1s;
+  }
+
+  .wrapper {
+    display: inline-block;
+
+  }
+  .wrapper:hover > .underline {
+    border-bottom: 1px solid black;
+    transition: 1s;
+
+  }
+
+  .underline {
+    transition: 1s;
+  }
