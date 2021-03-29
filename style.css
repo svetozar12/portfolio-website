@@ -58,7 +58,9 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
    background-position: center;
    background-repeat: no-repeat;
    background-size: cover;
-   min-height: 850px;
+   min-height: 760px;
+   position: relative;
+   left: 0px;
 
 }
 /*that is the first text that is shown when u enter the site (hey im svetozar gospodinov)*/
@@ -66,8 +68,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 	position: relative; 
 	color: white;
 	text-align: center;
-	font-size: 36px;
-	top: 350px;
+	top: 241px;
 /*that is the lines before my name*/
 }
 
@@ -82,13 +83,13 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 }
 .line::before {
 	position: relative;
-	content: "____ ";
+	content: "___ ";
 	top: -18px;
 /*these are the lines after my name*/
 }
 .line::after {
 	position: relative;
-	content: " ____";
+	content: " ___";
 	top: -18px;
 
 }
@@ -108,7 +109,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 800px;
+    min-height: 660px;
 
 }
 /*grid 3x3 its a grid 3x3*/
@@ -180,6 +181,16 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   color: white !important;
 }
 
+.black-background {
+  background-color: black;
+  width: 1100px;
+  height: 300px;
+  position: relative;
+  top: -229px;
+  left: 5px;
+  display: inline-block;
+  color: white;
+}
 
 /*navbar*/
 body {
