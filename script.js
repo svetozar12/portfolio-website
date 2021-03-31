@@ -18,11 +18,15 @@ window.addEventListener("scroll", function() {
      
            
            
-             elem.classList.add("animation2_fade");
-                  elem.classList.remove("default1");
+             elem.classList.remove("animation2_fade");
+             elem.classList.add("default1");
           }  
 
-      
+       else {
+
+        elem.classList.add("animation2_fade");
+        elem.classList.remove("default1");
+      }
     });
   }, 
   false);
