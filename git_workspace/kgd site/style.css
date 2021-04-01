@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+
+}
+
+header {
+    background-color: rgba(40, 147, 156, 0.3);
+    padding: 10px 10px;
+}
+
+.circle {
+    margin: 10px 0px 0px 10px;/*top right bottom left*/
+    display: inline-block;
+    width: 40%;
+    
+    
+}
+
+.circle a {
+    background-color: black;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.list {
+    display: inline-block;
+    width: 50%;
+    vertical-align: top;
+    
+
+}
+
+.list  ul li {
+    display: inline-block;
+    width: 30%;
+    margin-top: 44px;
+    
+    
+}
+
+main {
+    width: 1600px;
+    margin:0 auto;
+    background-color: rgba(0, 0, 0, .3);
+    border: solid 1px;
+}
