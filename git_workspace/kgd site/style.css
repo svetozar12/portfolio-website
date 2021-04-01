@@ -3,12 +3,18 @@
     padding: 0;
 }
 
+.container {
+    background: linear-gradient(15deg,red,yellow);
+}
+
 h1 {
     text-align: center;
 
 }
 
 header {
+    border-bottom: solid 1px;
+    border-top: none;
     background-color: rgba(40, 147, 156, 0.3);
     padding: 10px 10px;
 }
@@ -50,4 +56,46 @@ main {
     margin:0 auto;
     background-color: rgba(0, 0, 0, .3);
     border: solid 1px;
+    border-top: none;
+}
+main .side-bar {
+    width: 30%;
+    display: inline-block;
+    vertical-align: top;
+    background-color: rgba(255, 255, 255, .1);
+}
+
+main .content {
+    width: 65%;
+    display: inline-block;
+}
+
+main .side-bar ul  {
+    list-style: none;
+    text-align: center;
+    
+}
+
+.side-bar li a {
+    text-decoration: none;
+    display: block;
+    width: 60%;
+    margin: 0 auto;
+    
+}
+
+.side-bar li {
+    margin-bottom: 6px;
+    
+}
+.side-bar a:hover {
+    transition: 1s;
+    border-bottom: solid 1px;
+    color: white;
+
+}
+
+footer {
+    background-color: rgba(146, 146, 146, 0.9);
+    color: white;
 }
