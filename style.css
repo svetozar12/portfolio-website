@@ -1,5 +1,5 @@
 /*remove padding from borders of default html site*/
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, caption {
+* {
     margin: 0;
     padding: 0;
     border: 0;
@@ -7,6 +7,8 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     font-size: 100%;
     vertical-align: baseline;
     background: transparent;
+    position: relative;
+    z-index: -1;
 
 }
 
@@ -53,6 +55,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
    min-height: 760px;
    position: relative;
    left: 0px;
+   z-index: -10;
 
 }
 /*that is the first text that is shown when u enter the site (hey im svetozar gospodinov)*/
@@ -104,7 +107,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   background-size: cover;
   min-height: 900px;
   position: relative;
-  z-index: 1;
+  z-index: -91;
 
 }
 
@@ -217,12 +220,117 @@ body {
 }
 
 .parallax-img3 {
-  position: relative;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    min-height: 760px;
+    background-image: url(pics/3.jpg);
+    background-attachment: fixed;
+    z-index: -21;
+    top: -200px;						
+
 }
 
 .logos-programming {
   width: 100px;
   height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px auto;
+  padding-left: 61px;
 }
 
+.html {
+  position: relative;
+  display: inline-block;
+  transition: 1s;
+  
 
+}
+
+.css {
+  display: inline-block;
+  transition: 1s;
+}
+
+.js {
+  display: inline-block;
+  transition: 1s;
+}
+
+.html:hover {
+  transition: 1s;
+  filter: brightness(10%) !important;
+}
+
+.css:hover {
+  transition: 1s;
+  filter: brightness(10%) !important;
+}
+
+.js:hover {
+  transition: 1s;
+  filter: brightness(10%) !important;
+}
+
+h1 {
+  margin: 0px 0px 0px 0px;
+  text-align: center;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.top-linear {
+  background:linear-gradient(177deg,rgb(255, 255, 255) 50%,rgba(0,0,0,.0) 50%);
+  width: 100%;
+  height: 195px;	
+  z-index: 23;	
+  position: relative;
+  top: -5px;
+}
+
+.bottom-linear {
+  background: linear-gradient(177deg, rgba(255,255,255,.0) 50%, rgba(255,255,255,1) 50%);
+  width: 100%;
+  height: 195px;	
+  z-index: -12;	
+  position: relative;
+  margin: 102px 0px 0px 0px;
+}
+
+.box  {
+  background-color: rgba(255, 255, 255, .1);   
+  width: 900px;
+  height: 270px;
+  margin: 0px auto;
+  display: block;
+  position: relative;
+ /* top: 204px;
+  left: 260px;*/
+  border: solid 1px;
+  font-family: Bebas Neue;
+  color: white;									
+}
+
+.My-skills {
+  font-family: Bebas Neue;
+  color: black;
+  position: relative;
+  z-index: 3;
+  padding: 30px 0px 0px 260px;
+  font-size: 50px;
+  font-weight: bold; 
+}
+
+.Form {
+  background-color: white;
+}
+
+.Contact-me {
+  margin: -250px 0px 0px 0px;
+  text-align: center;
+  font-size: 50px;
+  font-weight: bold;
+  font-family: Bebas Neue;
+}
