@@ -202,14 +202,6 @@ body {
     transform: rotate(-45deg) translate(10px, -25px);
     
 } 
-/*
-.burger-menu-circle {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-color: red;
-    z-index: 999 !important;
-}*/
 
 #burger-menu.open {
   width:25%;
@@ -288,6 +280,7 @@ h1 {
   z-index: 23;	
   position: relative;
   top: -5px;
+  
 }
 
 .bottom-linear {
@@ -297,6 +290,7 @@ h1 {
   z-index: -12;	
   position: relative;
   margin: 102px 0px 0px 0px;
+  border-top: solid 1px;
 }
 
 .box  {
@@ -336,7 +330,10 @@ h1 {
   z-index: 10;
   border: solid 1px;
   display: block;
-  margin: 30px 0px 10px 500px;
+  margin: 29px 0px 10px 580px;
+  border-radius: 10px;
+  padding: 8px;
+  font-family: 'Times New Roman';
   
 }
 
@@ -345,7 +342,10 @@ h1 {
   z-index: 10;
   border: solid 1px;
   display: block;
-  margin: 30px 0px 10px 500px;
+  margin: 29px 0px 10px 580px;
+  border-radius: 10px;
+  padding: 8px;
+  font-family: 'Times New Roman';
 }
 
 #subject {
@@ -353,20 +353,53 @@ h1 {
   z-index: 10;
   border: solid 1px;
   display: block;
-  margin: 30px 0px 10px 500px;
+  margin: 29px 0px 10px 580px;
+  border-radius: 10px;
+  padding: 8px;
+  font-family: 'Times New Roman';
   
 }
 
 #message {
-  position: relative;
+  position: absolute;
   z-index: 10;
   border: solid 1px;
-  bottom: 131px;
+  bottom: -100px;
   left: 750px;
   display: inline;
-  
+  border-radius: 10px;
+  margin: 0px 0px 100px 59px;
+  padding: 8px;
+  width: 244px;
+  height: 149px;
+  font-family: 'Times New Roman';
+  resize: none;
+}
+
+#submit {
+  position: absolute;
+  z-index: 10;
+  margin: 10px 0px 0px 576px;/*top right bottom left*/
+  border: solid 1px;  
+  border-radius: 10px;
+  padding: 10px;
+  width: 500px;
+  background-color: black;
+  color: white;
+  font-weight: bolder;
+  font-size: 30px;
+  font-family: 'Times New Roman';
 }
 
 #form-possition {
   position: relative;
+}
+
+::placeholder {
+  font-size: 24px;
+  padding: 10px;
+  font-weight: bolder;
+  color: rgb(65, 64, 64);
+  font-family: 'Times New Roman';
+
 }
