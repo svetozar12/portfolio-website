@@ -323,14 +323,50 @@ h1 {
   font-weight: bold; 
 }
 
-.Form {
-  background-color: white;
-}
-
 .Contact-me {
   margin: -250px 0px 0px 0px;
   text-align: center;
   font-size: 50px;
   font-weight: bold;
   font-family: Bebas Neue;
+}
+
+#text {
+  position: relative;
+  z-index: 10;
+  border: solid 1px;
+  display: block;
+  margin: 30px 0px 10px 500px;
+  
+}
+
+#email {
+  position: relative;
+  z-index: 10;
+  border: solid 1px;
+  display: block;
+  margin: 30px 0px 10px 500px;
+}
+
+#subject {
+  position: relative;
+  z-index: 10;
+  border: solid 1px;
+  display: block;
+  margin: 30px 0px 10px 500px;
+  
+}
+
+#message {
+  position: relative;
+  z-index: 10;
+  border: solid 1px;
+  bottom: 131px;
+  left: 750px;
+  display: inline;
+  
+}
+
+#form-possition {
+  position: relative;
 }
