@@ -4,18 +4,6 @@
 	
 	<title>Portfolio about me</title>
 <script src="script.js"></script>
-<script>
-	function myFunction(x) {
-	  x.classList.toggle("change");
-	}
-		function openNav()  {
-			document.getElementById("burger-menu").classList.toggle("open");
-	  }    
-		function closeNav() {
-			document.getElementById("burger-menu").style.widht="0px";
-	  }  
-	
-	</script>
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="stylesheet" type="text/css" href="style1-keyframes.css">
@@ -28,8 +16,10 @@
 		<div style="position: fixed;">
 			<div id="burger-menu" class="sidenav">
 				<a href="index.html">About Me</a>
-				<a href="services.html" target="_blank">Services</a>
+				<a href="services.html" target="_blank">Skills</a>
 				<a href="contact.html" target="_blank">Contact</a>
+				<a class="git-hub" href="#"><img src="github.jpg" alt=""></a>
+					
 			</div>
 			<div id="burger" class="burger-menu-btn" onclick="openNav();myFunction(this)">	
 				<div class="burger-menu-1"></div>
@@ -49,7 +39,7 @@
 								color: white;
 								text-align: center;
 								font-size: 36px;
-								top: 350px;">
+								top: 450px;">
 							<p>Hey, I'm</p>
 							<strong class="line" style="font-family: 'arial';">SVETOZAR GOSPODINOV</strong>
 						</div>	
@@ -58,7 +48,7 @@
 			
 					<div style=
 							"position: relative;
-							top: 670px;
+							top: 891px;
 							left: 0px;						 
 							height:117px;
 							background-color:white;
@@ -124,9 +114,11 @@
 
 								<div class="bottom-linear"></div>
 							</div>	
-									<div  class="Form">
-										<h1 class="Contact-me">CONTACT</h1>
+							
+									
+							<h1 class="Contact-me">CONTACT</h1>
 											<form id="Form" action="">
+												
 												<div id="form-possition">
 													<input id="text" name="text" placeholder="Your name..." onfocus="this.placeholder ='' " onblur="this.placeholder = 'Your name...'" type="text">
 													<input id="email" name="email" placeholder="Email..." onfocus="this.placeholder ='' " onblur="this.placeholder = 'Email...'" type="email">
@@ -135,9 +127,13 @@
 													<textarea name="message" id="message" placeholder="Your message..." onfocus="this.placeholder ='' " onblur="this.placeholder = 'Your message...'" ></textarea>
 													<input name="submit" id="submit" type="submit" value="SUBMIT"> 
 											</form>
-									</div>
-
-									<footer></footer>
+									
+								
+						<footer>
+							<div class="bottom-footer">
+								
+							</div>
+						</footer>
 												
 
 
