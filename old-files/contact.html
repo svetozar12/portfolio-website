@@ -1,0 +1,151 @@
+<html>
+    <head>
+        <title>Contact</title>
+            <link rel="stylesheet" href="form.css">
+        <style>
+              html {
+                  background-image: url('pics/contact.jpg');
+                  background-repeat: no-repeat;
+                  background-size: cover;
+                
+              }
+              .links {
+                   background-color: white;
+                   position: absolute;
+                   display: block;
+                   top: 725px;
+                   width: 1600px;
+                   height: 80px;
+
+                    }  
+              .black-line {
+                  background-color: rgb(1, 72, 1);
+                  width: 1600px;
+                  height: 23px;
+                  position: relative;  
+                  top: 805px;
+                  z-index: 1;
+              }      
+        </style>    
+        <script>
+            function myFunction(x) {
+            x.classList.toggle("change");
+            }
+                function openNav()  {
+                    document.getElementById("burger-menu").classList.toggle("open");
+            }    
+                function closeNav() {
+                    document.getElementById("burger-menu").style.widht="0px";
+            }  
+            
+        </script>
+        <body>
+            <div style="position: fixed;">
+                <div id="burger-menu" class="sidenav">
+                    <a href="index.html" target="_blank" >About Me</a>
+                    <a href="services.html">Services</a>
+                    <a href="contact.html" target="_blank">Contact</a>
+            </div>
+                <div id="burger" class="burger-menu-btn" onclick="openNav();myFunction(this)">
+            <!--<div class="change .burger-menu-circle"></div>-->		
+            <div class="burger-menu-1"></div>
+            <div class="burger-menu-2"></div>
+            <div class="burger-menu-3"></div>
+                </div>
+              </div>
+            
+                    <div class="container2">
+                        <div class="box-background">
+
+                        </div>
+                            <form class="box" action="">
+                                <h1 style="font-weight: bolder; font-size: 20px; position: relative; left: 71px;     color: white; padding-bottom:10px ;">Contact me</h1>
+                                <input style="position: relative;left: 24px; margin-bottom: 16px;" name="fname" type="text" placeholder="Fist Name" onfocus="this.placeholder = '' " onblur="this.placeholder='Fist Name' "> <br>
+                                <input style="position: relative;left: 24px; margin-bottom: 16px;" name="lname" type="text" placeholder="Last Name" onfocus="this.placeholder = '' " onblur="this.placeholder='Last Name' "> <br> 
+                                <input style="position: relative;left: 24px; margin-bottom: 16px;" name="email" type="email" placeholder="What is your email?" onfocus="this.placeholder = '' " onblur="this.placeholder='What is your email?' " > <br>
+                                    <textarea style="position: relative;margin-bottom: 10px; left: -1px; resize: none; right: 740px;" name="Message" id="Message" cols="30" rows="2" placeholder="Your Message" onfocus="this.placeholder = '' " onblur= "this.placeholder='Your Message'" ></textarea>  <br>
+                                <input style="position: relative;left: 24px;" type="submit" value="Send">    
+                            </form>
+
+                        </div>
+                    <div class="black-line">
+                       
+                    </div>
+                    <div class="wrapper">
+                        <div class="underline">
+                            <a href="tel: +359 896 78255"> <p style="z-index: 3; top: 760px;left: 1360px; position: absolute; color: black;">+359 896 78255</p></a>
+                        </div>
+                    </div>
+
+                    <div class="wrapper">
+                        <div class="underline">
+                            <a href="mailto:s.gospodinov02@gmail.com"><p style="z-index: 3; top: 777px;left: 1293px; position: absolute; color: black;">s.gospodinov@gmail.com</p></a>
+                        </div>
+                    </div>
+                    
+                        <div class="links">
+                            <div class="logos">
+                                <div class="logo-wrapper">
+                                    <div class="darken-logos">
+                                        <a href="https://github.com/svetozar12"target="_blank">
+                                            <img style=
+                                               "position: absolute;
+                                                margin-left: 14px;
+                                                width: 32px;
+                                                top: 32px;
+                                                left: -51px;
+                                                background-color: aquamarine;
+                                                border-radius: 50%;" 
+                                            src="pics/logos/github.png" alt=""></a>
+                                    </div>
+                                </div>
+
+                                <div class="logo-wrapper">
+                                    <div class="darken-logos">
+                                        <a href="https://www.instagram.com/heyits.me902/" target="_blank">
+                                           <img style=
+                                                "position: absolute;
+                                                margin-left: 10px;
+                                                width: 34px;
+                                                top: 32px;
+                                                left: -86px;"
+                                            src="pics/logos/instagram.png" alt=""></a>
+                                    </div>
+                                </div>
+
+                                <div class="logo-wrapper">
+                                    <div class="darken-logos">
+                                        <a href="https://www.facebook.com/profile.php?id=100010833822992"target="_blank">
+                                            <b 
+                                            style=
+                                           "position: absolute;
+                                            text-decoration: none;
+                                            color: white; 
+                                            font-size: 28px;
+                                            top: 34px;
+                                            left: -101px;
+                                            z-index: 3; ">
+                                            f</b>
+                                            <img style=
+                                               "position: absolute;
+                                                margin-left: 5px;
+                                                width: 39px;
+                                                top: 32px;
+                                                left: -126px;
+                                                background-color: rgb(72, 72, 238);
+                                                height: 34px;
+                                                border-radius: 50%;"
+                                                
+                                              alt=""></a>
+                                    </div>
+                                </div>
+                                
+                                
+                               
+                            </div>    
+                        </div>
+                    
+
+        </body>
+    </head>
+</html>
