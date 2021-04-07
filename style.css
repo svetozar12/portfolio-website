@@ -154,7 +154,7 @@ body {
   margin-bottom: 100px;
   position: relative;
   bottom: 40px;
-  left: 32px;
+  left: -22px;
   text-align: center;
 
 }
@@ -217,6 +217,7 @@ body {
   top: 5px;
   width: 30px;
   height: 30px;
+  transition: 0.5s;
 }
 
 #home {
@@ -224,7 +225,18 @@ body {
   height: 40px;
   top: 8px;
   right: 90px;
+  transition: 0.5s;
 }
+
+#home:hover {
+  opacity: .2;
+  transition: 0.5s;
+}
+
+#git-hub:hover {
+  opacity: .2;
+  transition: 0.5s;
+} 
 
 #burger-menu.open {
   width:100%;
@@ -427,10 +439,7 @@ form {
   
 }
 
-#form-possition {
-  position: relative;
-  top: 100xp;
-}
+
 
 ::placeholder {
   font-size: 24px;
@@ -449,10 +458,55 @@ footer {
 }
 
 .bottom-footer {
-  top: 90px;
+  top: 70px;
   position: relative;
   background-color: rgba(233, 233, 233, 0.2);
   width: 100%;
-  height: 60px;
+  height: 55px;
+  color: white;
+
+}
+
+.bottom-footer  p {
+  font-size: 20px;
+  color: white;
+  font-weight: bold;
+  display: inline-block;
+  margin-left: 4px;
+
+}
+
+#year {
+  font-size: 13px;
+  display: inline-block;
+  margin-left: 10px;
+  font-weight: bold;
+
+}
+
+.upper-footer {
+  color: white;
+  display: block;
+  position: relative;
+  font-size: 16px;
+  top: 10px;
+  margin-left: 4px;
+}
+
+.upper-footer p {
+  color: white;
+  font-family: Bebas Neue;
+}
+
+.small-menu {
+  display: inline-block;
+}
+
+.start {
+  top: 10px;
+  left: 4px;
+  font-size: 13px;
+  text-decoration: none;
+  color: white;
 
 }
