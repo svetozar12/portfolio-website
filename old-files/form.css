@@ -101,6 +101,7 @@ body {
   }
   
   .sidenav {
+    scroll-behavior: smooth;
     height: 100%;
     width: 0;
     position: fixed;
