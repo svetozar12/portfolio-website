@@ -42,8 +42,7 @@ window.addEventListener("scroll", function() {
 			document.getElementById("burger-menu").style.widht="0px";
     }
 
-    //rewriting in css in javascript
-
+    //anchor smooth scrolling 
 
 
 

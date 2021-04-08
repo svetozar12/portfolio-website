@@ -19,9 +19,9 @@
 		<div style="position: fixed;">
 			<div id="burger-menu" class="sidenav open">
 				<a href="#"><img src="pics/logos/home.png" id="home" alt=""></a>
-				<a href="#About me">About Me</a>
-				<a href="#My skills" >Skills</a>
-				<a href="#contact me">Contact</a>
+				<a href="#linkMe">About Me</a>
+				<a href="#linkMy skills">Skills</a>
+				<a href="#linkContact me">Contact</a>
 				<a href="https://github.com/svetozar12" target="_blank"><img src="pics/logos/github.png" id="git-hub" alt=""></a>	
 			</div>
 			<!--
@@ -60,7 +60,7 @@
 							font-size:36px;
 							z-index: 2;">
 						<div class="black-text">
-							<p id="About me" style=
+							<p id="linkMe" style=
 								"position: relative;
 									top: 27px;
 									left: 0px;							   
@@ -92,7 +92,7 @@
 								"height:250px;
 								font-size:36px;">		
 								<div class="top-linear">
-									<p id="My skills" class="My-skills">My skills</p>				
+									<p id="linkMy skills" class="My-skills">My skills</p>				
 								</div>				
 							</div>				
 								<div class="box"> 
@@ -121,15 +121,15 @@
 							</div>	
 							
 									
-							<h1 id="contact me" class="Contact-me">CONTACT</h1>
+							<h1 id="linkContact me" class="Contact-me">CONTACT</h1>
 											<form id="Form" action="">
 												
 												<div id="form-possition">
-													<input id="text" name="text" placeholder="Your name..." onfocus="this.placeholder ='' " onblur="this.placeholder = 'Your name...'" type="text">
-													<input id="email" name="email" placeholder="Email..." onfocus="this.placeholder ='' " onblur="this.placeholder = 'Email...'" type="email">
-													<input id="subject" name="subject" placeholder="Subject..." onfocus="this.placeholder ='' " onblur="this.placeholder = 'Subject...'" type="text">
+													<input id="text" name="text" placeholder="Your name..." onfocus="this.placeholder ='' " onblur="this.placeholder = 'Your name...'" type="text" required title="Enter your name">
+													<input id="email" name="email" placeholder="Email..." onfocus="this.placeholder ='' " onblur="this.placeholder = 'Email...'" type="email" required title="Your@email">
+													<input id="subject" name="subject" placeholder="Subject..." onfocus="this.placeholder ='' " onblur="this.placeholder = 'Subject...'" type="text" required title="The subject of the email">
 												</div>					
-													<textarea name="message" id="message" placeholder="Your message..." onfocus="this.placeholder ='' " onblur="this.placeholder = 'Your message...'" ></textarea>
+													<textarea name="message" id="message" placeholder="Your message..." onfocus="this.placeholder ='' " onblur="this.placeholder = 'Your message...'" required title="the content of the email"></textarea>
 													<input name="submit" id="submit" type="submit" value="SUBMIT"> 
 											</form>
 									
