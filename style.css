@@ -1,5 +1,11 @@
 /*remove padding from borders of default html site*/
 /*default css is written for 1920x1080*/
+/*
+*{
+  background: #000 !important;
+  color: #0f0 !important;
+  outline: solid #f00 1px !important;
+}*/
 * {
     margin: 0;
     padding: 0;
@@ -340,10 +346,59 @@ h1 {
   text-align: center;
 }
 
+
+
+
+#Form {
+  display: grid;
+  grid-column: 1fr 1fr 1fr 1fr;
+  grid-row: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 2%;
+  margin-bottom: 4%;
+  grid-template-areas:
+  "dot1 contact contact dot"
+  "dot1 text-me area    dot"
+  "dot1 email   area    dot"
+  "dot1 subject area    dot" 
+  "dot1 submit  submit  dot";
+  
+}
+
+.contact {
+  grid-area: contact;
+}
+
+.text-me {
+  grid-area: text-me; 
+  margin-left: 30%;
+}
+
+.email {
+  grid-area: email;
+  margin-left: 30%;
+}
+
+.subject {
+  grid-area: subject;
+  margin-left: 30%;
+}
+
+.area {
+  grid-area: area;
+  resize: none;
+  width: 70%;
+
+}
+
+.submit {
+  grid-area: submit;
+  width: 50%;
+  margin-left: 25%;
+}
+
+
+
 .Contact-me {
-  bottom: 200px;
-  right: 40px;
-  position: relative;
   text-align: center;
   font-size: 50px;
   font-weight: bold;
@@ -352,11 +407,7 @@ h1 {
 
 
 #text {
-  position: relative;
-  z-index: 10;
   border: solid 1px;
-  display: block;
-  margin: 29px 0px 10px 485px;
   border-radius: 10px;
   padding: 8px;
   font-family: 'Times New Roman';
@@ -364,22 +415,15 @@ h1 {
 }
 
 #email {
-  position: relative;
-  z-index: 10;
   border: solid 1px;
-  display: block;
-  margin: 29px 0px 10px 485px;
   border-radius: 10px;
   padding: 8px;
   font-family: 'Times New Roman';
 }
 
 #subject {
-  position: relative;
   z-index: 10;
   border: solid 1px;
-  display: block;
-  margin: 29px 0px 10px 485px;
   border-radius: 10px;
   padding: 8px;
   font-family: 'Times New Roman';
@@ -387,29 +431,17 @@ h1 {
 }
 
 #message {
-  position: absolute;
-  z-index: 10;
   border: solid 1px;
-  bottom: -100px;
-  left: 750px;
-  display: inline;
-  border-radius: 10px;
-  margin: 0px 0px 100px 0px;
-  padding: 8px;
-  width: 190px;
-  height: 149px;
+  border-radius: 10px; 
   font-family: 'Times New Roman';
   resize: none;
+  padding: 10px;
 }
 
 #submit {
-  position: absolute;
-  z-index: 10;
-  margin: 10px 0px 0px 570px;/*top right bottom left*/
   border: solid 1px;  
   border-radius: 10px;
   padding: 10px;
-  width: 290px;
   background-color: black;
   color: white;
   font-weight: bolder;
@@ -417,7 +449,6 @@ h1 {
   font-family: 'Times New Roman';
   
 }
-
 
 
 ::placeholder {

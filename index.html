@@ -8,9 +8,6 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="stylesheet" type="text/css" href="style1-keyframes.css">
 	<link rel="stylesheet" type="text/css" href="smartphone.css">
-	<link rel="stylesheet" href="normal-screen.css">
-	<link rel="stylesheet" href="media-querry-contact.css">
-		<link rel="preconnect" href="https://fonts.gstatic.com">
 		<link href="https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap" rel="stylesheet">
 		<link rel="preconnect" href="https://fonts.gstatic.com">
 		<link href="https://fonts.googleapis.com/css2?family=Londrina+Solid&display=swap" rel="stylesheet">
@@ -24,7 +21,7 @@
 				<a href="#"><img src="pics/logos/home.png" id="home" alt=""></a>
 				<a href="#linkMe">About me</a>
 				<a href="#linkMy skills">Skills</a>
-				<a href="#linkContact me">Contact</a>
+				<a href="#linkContact">Contact</a>
 				<a href="https://github.com/svetozar12" target="_blank"><img src="pics/logos/github.png" id="git-hub" alt=""></a>	
 			</div>
 			
@@ -36,7 +33,7 @@
 		</div>
 
 
-			< class="main">
+			<div class="main">
 				<!--PARALLAX 1-->
 				<div class="parallax-img1">
 					<div class="animation_falling_text">
@@ -91,14 +88,14 @@
 								<div class="bottom-linear"></div>
 							</div>	
 							
-
-							<h1 id="linkContact me" class="Contact-me">CONTACT</h1>
-							<form id="Form"  action="">
-								<input id="text" name="text" placeholder="Your name..." onfocus="this.placeholder ='' " onblur="this.placeholder = 'Your name...'" type="text" required title="Enter your name">
-								<input id="email" name="email" placeholder="Email..." onfocus="this.placeholder ='' " onblur="this.placeholder = 'Email...'" type="email" required title="Your@email">
-								<input id="subject" name="subject" placeholder="Subject..." onfocus="this.placeholder ='' " onblur="this.placeholder = 'Subject...'" type="text" required title="The subject of the email">					
-								<textarea name="message" id="message" placeholder="Your message..." onfocus="this.placeholder ='' " onblur="this.placeholder = 'Your message...'" required title="the content of the email"></textarea>
-								<input name="submit" id="submit" type="submit" value="SUBMIT"> 
+	
+							<form id="Form" action="">
+								<h1 id="linkContact" class="Contact-me contact">CONTACT</h1>
+								<input id="text" class="text-me" name="text" type="text" placeholder="Your name...">
+								<input id="email" class="email"  name="email" placeholder="Your email@.com">
+								<input id="subject" class="subject" name="subject" placeholder="Subject">					
+								<textarea name="message" id="message" class="area" placeholder="Message"></textarea>
+								<input name="submit" id="submit" class="submit" type="submit" value="SUBMIT"> 
 							</form>
 													
 						<footer>
