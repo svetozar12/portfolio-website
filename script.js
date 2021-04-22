@@ -1,13 +1,9 @@
+window.addEventListener("load", () => {
 //on scroll
 var onAppear = [];//array
-
-document.addEventListener("DOMContentLoaded",
-  function () {
     onAppear = [].map.call(document.querySelectorAll(".default1"), function(item ) {
       return item;
     });
-  }, false);
-
 window.addEventListener("scroll", function() {
   onAppear.forEach(function(elem) {
     var vwTop = window.pageYOffset;
@@ -28,8 +24,8 @@ window.addEventListener("scroll", function() {
         elem.classList.remove("default1");
       }
     });
-  }, 
-  false);
+  },
+  );
 //burger menu 
 
     function myFunction(x) {
@@ -42,7 +38,5 @@ window.addEventListener("scroll", function() {
 			document.getElementById("burger-menu").style.widht="0px";
     }
 
-    //anchor smooth scrolling 
-
-
-
+    
+  });
