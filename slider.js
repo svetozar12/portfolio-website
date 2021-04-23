@@ -2,9 +2,9 @@
 
 window.addEventListener("load", () => { 
     function imgSlider() {
-        let div_color_red = document.getElementById("red");
-        let div_color_green = document.getElementById("green");
-        let div_color_blue = document.getElementById("blue");
+        const div_color_red = document.getElementById("red");
+        const div_color_green = document.getElementById("green");
+        const div_color_blue = document.getElementById("blue");
        
         let array = [div_color_red, div_color_green, div_color_blue]; 
         var count = -1;
