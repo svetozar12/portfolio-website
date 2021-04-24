@@ -648,7 +648,7 @@ footer {
 .opacity-p {
   opacity: 0 !important;
   text-align: center;
-  transition: 1s;
+  transition: 1.6s;
 }
 
 .sub-first {
@@ -692,5 +692,5 @@ footer {
   position: absolute;
   color: white;
   display: inline;
-  transition: 1s;
+  transition: 1.6s;
 }
