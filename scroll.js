@@ -1,4 +1,5 @@
 window.addEventListener("load", () => {
+  let burger = document.getElementById("burger burger-menu");
 //on scroll
 var onAppear = [];//array
     onAppear = [].map.call(document.querySelectorAll(".default1"), function(item ) {
@@ -18,25 +19,19 @@ window.addEventListener("scroll", function() {
           }  
 
        else {
-
-
         elem.classList.add("animation2_fade");
         elem.classList.remove("default1");
       }
     });
   },
   );
-//burger menu 
+function openNav()  {
+  document.getElementById("burger-menu").classList.toggle("open");
+}    
 
-    function myFunction(x) {
-      x.classList.toggle("change");
-    }
-		function openNav()  {
-			document.getElementById("burger-menu").classList.toggle("open");
-	  }    
-		function closeNav() {
-			document.getElementById("burger-menu").style.widht="0px";
-    }
 
-    
-  });
+  burger.addEventListener("click",() =>{
+    burger.classList.toggle("change");
+    openNav();
+  });  
+});
